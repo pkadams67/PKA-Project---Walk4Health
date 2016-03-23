@@ -17,7 +17,7 @@ class PKA_HealthKitManager {
         let healthDataToRead = Set(arrayLiteral: HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!)
         let healthDataToWrite = Set(arrayLiteral: HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!)
         if !HKHealthStore.isHealthDataAvailable() {
-            print("Cannot access HealthKit")
+            print("Cannot access HealthKit.")
         }
         healthKitStore.requestAuthorizationToShareTypes(healthDataToWrite, readTypes: healthDataToRead) { (success, error) -> Void in
             if( completion != nil ) {
@@ -52,7 +52,7 @@ class PKA_HealthKitManager {
             if( error != nil ) {
                 print(error)
             } else {
-                print("Distance recorded. Please verify!")
+                print("Distance recorded. Please verify in Health app.")
             }
         })
     }

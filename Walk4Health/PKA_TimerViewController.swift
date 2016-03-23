@@ -34,9 +34,13 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
         } else {
-            print("Please enable location")
+            print("Please enable location.")
         }
         getHealthKitPermission()
+    }
+
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,20 +48,20 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func getHealthKitPermission() {
-        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+        healthManager.authorizeHealthKit { (authorized, error) -> Void in
             if authorized {
                 self.setHeight()
             } else {
                 if error != nil {
                     print(error)
                 }
-                print("Permission denied")
+                print("Permission denied.")
             }
         }
     }
 
     @IBAction func startTimer(sender: AnyObject) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("updateTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(PKA_TimerViewController.updateTime), userInfo: nil, repeats: true)
         zeroTime = NSDate.timeIntervalSinceReferenceDate()
         distanceTraveled = 0.0
         startLocation = nil
@@ -95,7 +99,7 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
             let lastDistance = lastLocation.distanceFromLocation(locations.last as CLLocation!)
             distanceTraveled += lastDistance * 0.000621371
             let trimmedDistance = String(format: "%.2f", distanceTraveled)
-            milesLabel.text = "\(trimmedDistance) Miles"
+            milesLabel.text = "\(trimmedDistance) miles"
         }
         lastLocation = locations.last as CLLocation!
     }
