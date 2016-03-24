@@ -74,10 +74,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cv-9b-rij" customClass="PKA_CustomButton" customModule="Walk4Health" customModuleProvider="target">
-                                        <rect key="frame" x="65" y="316" width="390" height="40"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="130" y="316" width="260" height="40"/>
+                                        <color key="backgroundColor" red="0.043137254901960784" green="0.14117647058823529" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
-                                        <state key="normal" title="Share with Health App">
+                                        <state key="normal" title="Share">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -98,7 +98,7 @@
                                     <constraint firstItem="dTg-Uh-lDt" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" multiplier="0.5" id="7bO-Wh-OyG"/>
                                     <constraint firstItem="bnF-fa-9lO" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" id="A0u-Fc-l92"/>
                                     <constraint firstItem="6XY-eo-Awp" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" multiplier="0.5" id="I2v-6v-Y67"/>
-                                    <constraint firstItem="4cv-9b-rij" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" multiplier="0.75" id="V2u-EP-9mi"/>
+                                    <constraint firstItem="4cv-9b-rij" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" multiplier="0.5" id="V2u-EP-9mi"/>
                                     <constraint firstItem="yjr-Zl-GdU" firstAttribute="width" secondItem="GtA-B0-Bv7" secondAttribute="width" id="dnr-Md-nlt"/>
                                 </constraints>
                                 <variation key="default">
@@ -119,6 +119,8 @@
                             <constraint firstItem="GtA-B0-Bv7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zDE-oC-ObC"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="heightLabel" destination="gXB-er-Qve" id="1IK-Mz-rGW"/>
                         <outlet property="milesLabel" destination="yjr-Zl-GdU" id="VX2-5F-r3M"/>

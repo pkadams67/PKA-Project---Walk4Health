@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import HealthKit
+import LaunchKit
 
 class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -27,6 +28,21 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
     let healthManager:PKA_HealthKitManager = PKA_HealthKitManager()
     var height: HKQuantitySample?
 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        LaunchKit.sharedInstance().presentAppReleaseNotesIfNeededFromViewController(self) { (didPresent: Bool) -> Void in
+            if didPresent {
+                print("Presented Release Notes.")
+            }
+        }
+        // Uncomment for debugging
+        LaunchKit.sharedInstance().debugAlwaysPresentAppReleaseNotes = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
@@ -37,10 +53,6 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
             print("Please enable location.")
         }
         getHealthKitPermission()
-    }
-
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,10 +98,10 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
         let strSeconds = String(format: "%02d", seconds)
         let strMSX10 = String(format: "%02d", millisecsX10)
         timerLabel.text = "\(strMinutes):\(strSeconds):\(strMSX10)"
-        if timerLabel.text == "60:00:00" {
-            timer.invalidate()
-            locationManager.stopUpdatingLocation()
-        }
+//        if timerLabel.text == "60:00:00" {
+//            timer.invalidate()
+//            locationManager.stopUpdatingLocation()
+//        }
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

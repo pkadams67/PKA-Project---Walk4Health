@@ -93,13 +93,13 @@
                                 <exclude reference="2sr-8P-6S5"/>
                                 <exclude reference="8lY-4M-bxd"/>
                                 <exclude reference="GBA-B7-NCS"/>
-                                <exclude reference="CRF-Mr-Dy9"/>
-                                <exclude reference="SEo-Z9-y3n"/>
-                                <exclude reference="zlK-KS-hmD"/>
                                 <exclude reference="2k8-p7-avF"/>
                                 <exclude reference="LtA-27-wCO"/>
                                 <exclude reference="Wzx-4z-N4X"/>
                                 <exclude reference="i6q-Dy-gc5"/>
+                                <exclude reference="CRF-Mr-Dy9"/>
+                                <exclude reference="SEo-Z9-y3n"/>
+                                <exclude reference="zlK-KS-hmD"/>
                                 <exclude reference="VxX-b0-r4L"/>
                                 <exclude reference="evX-Nq-db2"/>
                             </mask>
@@ -113,18 +113,20 @@
                                 <include reference="2sr-8P-6S5"/>
                                 <include reference="8lY-4M-bxd"/>
                                 <include reference="GBA-B7-NCS"/>
-                                <include reference="CRF-Mr-Dy9"/>
-                                <include reference="SEo-Z9-y3n"/>
-                                <include reference="zlK-KS-hmD"/>
                                 <include reference="2k8-p7-avF"/>
                                 <include reference="LtA-27-wCO"/>
                                 <include reference="Wzx-4z-N4X"/>
                                 <include reference="i6q-Dy-gc5"/>
+                                <include reference="CRF-Mr-Dy9"/>
+                                <include reference="SEo-Z9-y3n"/>
+                                <include reference="zlK-KS-hmD"/>
                                 <include reference="VxX-b0-r4L"/>
                                 <include reference="evX-Nq-db2"/>
                             </mask>
                         </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,6 +135,6 @@
     </scenes>
     <resources>
         <image name="Background" width="547" height="646"/>
-        <image name="Logo" width="512" height="512"/>
+        <image name="Logo" width="375" height="375"/>
     </resources>
 </document>

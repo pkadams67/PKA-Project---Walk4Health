@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97BE36CD1CA3D1720083A648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BE36CC1CA3D1720083A648 /* Assets.xcassets */; };
 		97E2A4291CA19E5B0038E042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2A4281CA19E5B0038E042 /* AppDelegate.swift */; };
 		97E2A42E1CA19E5B0038E042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E2A42C1CA19E5B0038E042 /* Main.storyboard */; };
-		97E2A4301CA19E5B0038E042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E2A42F1CA19E5B0038E042 /* Assets.xcassets */; };
 		97E2A4331CA19E5B0038E042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E2A4311CA19E5B0038E042 /* LaunchScreen.storyboard */; };
 		97E2A43C1CA19E6B0038E042 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E2A43B1CA19E6B0038E042 /* HealthKit.framework */; };
 		97E2A43E1CA19EE90038E042 /* PKA_CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2A43D1CA19EE90038E042 /* PKA_CustomButton.swift */; };
@@ -17,13 +17,14 @@
 		97E2A4421CA19F400038E042 /* PKA_HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2A4411CA19F400038E042 /* PKA_HealthKitManager.swift */; };
 		97E2A4441CA19F790038E042 /* PKA_TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2A4431CA19F790038E042 /* PKA_TimerViewController.swift */; };
 		97E2A4461CA1A0240038E042 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E2A4451CA1A0240038E042 /* CoreLocation.framework */; };
+		FD43A7CA12A019A2FECD7344 /* Pods_Walk4Health.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D428F546DCE1CDD3123F141B /* Pods_Walk4Health.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97BE36CC1CA3D1720083A648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E2A4251CA19E5B0038E042 /* Walk4Health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walk4Health.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E2A4281CA19E5B0038E042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97E2A42D1CA19E5B0038E042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97E2A42F1CA19E5B0038E042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E2A4321CA19E5B0038E042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97E2A4341CA19E5B0038E042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97E2A43A1CA19E6B0038E042 /* Walk4Health.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Walk4Health.entitlements; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 		97E2A4411CA19F400038E042 /* PKA_HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKA_HealthKitManager.swift; sourceTree = "<group>"; };
 		97E2A4431CA19F790038E042 /* PKA_TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKA_TimerViewController.swift; sourceTree = "<group>"; };
 		97E2A4451CA1A0240038E042 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9A0DE39E042A9A39870B0F85 /* Pods-Walk4Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walk4Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Walk4Health/Pods-Walk4Health.release.xcconfig"; sourceTree = "<group>"; };
+		9AC9A1B3B8DAA47EDC7E1A97 /* Pods-Walk4Health.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walk4Health.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Walk4Health/Pods-Walk4Health.debug.xcconfig"; sourceTree = "<group>"; };
+		D428F546DCE1CDD3123F141B /* Pods_Walk4Health.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walk4Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,18 +46,29 @@
 			files = (
 				97E2A4461CA1A0240038E042 /* CoreLocation.framework in Frameworks */,
 				97E2A43C1CA19E6B0038E042 /* HealthKit.framework in Frameworks */,
+				FD43A7CA12A019A2FECD7344 /* Pods_Walk4Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B688B01AE400996F961BFB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AC9A1B3B8DAA47EDC7E1A97 /* Pods-Walk4Health.debug.xcconfig */,
+				9A0DE39E042A9A39870B0F85 /* Pods-Walk4Health.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		97E2A41C1CA19E5B0038E042 = {
 			isa = PBXGroup;
 			children = (
 				97E2A4271CA19E5B0038E042 /* Walk4Health */,
 				97E2A4261CA19E5B0038E042 /* Products */,
 				97E2A4471CA1A0380038E042 /* Frameworks */,
+				8B688B01AE400996F961BFB7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +91,7 @@
 				97E2A4411CA19F400038E042 /* PKA_HealthKitManager.swift */,
 				97E2A43F1CA19F160038E042 /* PKA_CustomView.swift */,
 				97E2A43D1CA19EE90038E042 /* PKA_CustomButton.swift */,
-				97E2A42F1CA19E5B0038E042 /* Assets.xcassets */,
+				97BE36CC1CA3D1720083A648 /* Assets.xcassets */,
 				97E2A4341CA19E5B0038E042 /* Info.plist */,
 			);
 			path = Walk4Health;
@@ -87,6 +102,7 @@
 			children = (
 				97E2A4451CA1A0240038E042 /* CoreLocation.framework */,
 				97E2A43B1CA19E6B0038E042 /* HealthKit.framework */,
+				D428F546DCE1CDD3123F141B /* Pods_Walk4Health.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97E2A4371CA19E5B0038E042 /* Build configuration list for PBXNativeTarget "Walk4Health" */;
 			buildPhases = (
+				A377715ACFC4AB6CDD8CA865 /* 📦 Check Pods Manifest.lock */,
 				97E2A4211CA19E5B0038E042 /* Sources */,
 				97E2A4221CA19E5B0038E042 /* Frameworks */,
 				97E2A4231CA19E5B0038E042 /* Resources */,
+				3DD10FFAE23A28CA84796012 /* 📦 Embed Pods Frameworks */,
+				0059E7AA40014F7811E200F1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,12 +176,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E2A4331CA19E5B0038E042 /* LaunchScreen.storyboard in Resources */,
-				97E2A4301CA19E5B0038E042 /* Assets.xcassets in Resources */,
+				97BE36CD1CA3D1720083A648 /* Assets.xcassets in Resources */,
 				97E2A42E1CA19E5B0038E042 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0059E7AA40014F7811E200F1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walk4Health/Pods-Walk4Health-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD10FFAE23A28CA84796012 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walk4Health/Pods-Walk4Health-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A377715ACFC4AB6CDD8CA865 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97E2A4211CA19E5B0038E042 /* Sources */ = {
@@ -284,13 +351,14 @@
 		};
 		97E2A4381CA19E5B0038E042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC9A1B3B8DAA47EDC7E1A97 /* Pods-Walk4Health.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Walk4Health/Walk4Health.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Adams (R8V2A2229T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Adams (R8V2A2229T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Walk4Health/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pkdams67.Walk4Health;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,13 +369,14 @@
 		};
 		97E2A4391CA19E5B0038E042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0DE39E042A9A39870B0F85 /* Pods-Walk4Health.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Walk4Health/Walk4Health.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Adams (R8V2A2229T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Paul Adams (R8V2A2229T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Walk4Health/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pkdams67.Walk4Health;
 				PRODUCT_NAME = "$(TARGET_NAME)";

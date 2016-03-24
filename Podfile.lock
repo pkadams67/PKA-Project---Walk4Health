@@ -1,0 +1,14 @@
+PODS:
+  - LaunchKit (2.1.1):
+    - LaunchKit/LaunchKit (= 2.1.1)
+  - LaunchKit/LaunchKit (2.1.1)
+
+DEPENDENCIES:
+  - LaunchKit
+
+SPEC CHECKSUMS:
+  LaunchKit: c967bbfa69944924a8b313a98972683a0b1e95c2
+
+PODFILE CHECKSUM: 1854b8e83fe690361c54c3db4690ec8607f98c6c
+
+COCOAPODS: 1.0.0.beta.5
