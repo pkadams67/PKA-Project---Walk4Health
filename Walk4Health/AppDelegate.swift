@@ -21,22 +21,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LaunchKit.launchWithToken("5BVpp5-2e7tKRD1ldaPRZK6gpJcWYaW_oWEEwvcJOqRL")
 
         // Uncomment for release build
-        //        let defaults = NSUserDefaults.standardUserDefaults()
-        //        let hasShownOnboarding = defaults.boolForKey("shownOnboardingBefore")
-        //        if !hasShownOnboarding {
-        //            let lk = LaunchKit.sharedInstance()
-        //            lk.presentOnboardingUIOnWindow(self.window!) { _ in
-        //                print("Showed onboarding!")
-        //                defaults.setBool(true, forKey: "shownOnboardingBefore")
-        //            }
-        //        }
+                let defaults = NSUserDefaults.standardUserDefaults()
+                let hasShownOnboarding = defaults.boolForKey("shownOnboardingBefore")
+                if !hasShownOnboarding {
+                    let lk = LaunchKit.sharedInstance()
+                    lk.presentOnboardingUIOnWindow(self.window!) { _ in
+                        print("Showed onboarding!")
+                        defaults.setBool(true, forKey: "shownOnboardingBefore")
+                    }
+                }
 
         // Uncomment for debugging
-        let lk = LaunchKit.sharedInstance()
-        lk.presentOnboardingUIOnWindow(self.window!) { _ in
-            print("Showed onboarding!")
-        }
-        
+//        let lk = LaunchKit.sharedInstance()
+//        lk.presentOnboardingUIOnWindow(self.window!) { _ in
+//            print("Onboarding presented!")
+//        }
+
         return true
     }
 

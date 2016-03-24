@@ -40,7 +40,7 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         // Uncomment for debugging
-        LaunchKit.sharedInstance().debugAlwaysPresentAppReleaseNotes = true
+//        LaunchKit.sharedInstance().debugAlwaysPresentAppReleaseNotes = true
     }
 
     override func viewDidLoad() {
