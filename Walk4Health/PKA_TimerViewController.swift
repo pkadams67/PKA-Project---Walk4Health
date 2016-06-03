@@ -25,7 +25,7 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
     var lastLocation: CLLocation!
     var distanceTraveled = 0.0
 
-    let healthManager:PKA_HealthKitManager = PKA_HealthKitManager()
+    let healthManager: PKA_HealthKitManager = PKA_HealthKitManager()
     var height: HKQuantitySample?
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -93,11 +93,11 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
         timePassed -= (NSTimeInterval(minutes) * 60)
         let seconds = UInt8(timePassed)
         timePassed -= NSTimeInterval(seconds)
-        let millisecsX10 = UInt8(timePassed * 100)
-        let strMinutes = String(format: "%02d", minutes)
-        let strSeconds = String(format: "%02d", seconds)
-        let strMSX10 = String(format: "%02d", millisecsX10)
-        timerLabel.text = "\(strMinutes):\(strSeconds):\(strMSX10)"
+        let millisecondsX10 = UInt8(timePassed * 100)
+        let stringMinutes = String(format: "%02d", minutes)
+        let stringSeconds = String(format: "%02d", seconds)
+        let stringMillisecondsX10 = String(format: "%02d", millisecondsX10)
+        timerLabel.text = "\(stringMinutes):\(stringSeconds):\(stringMillisecondsX10)"
 //        if timerLabel.text == "60:00:00" {
 //            timer.invalidate()
 //            locationManager.stopUpdatingLocation()
@@ -119,7 +119,7 @@ class PKA_TimerViewController: UIViewController, CLLocationManagerDelegate {
     func setHeight() {
         let heightSample = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)
         self.healthManager.getHeight(heightSample!, completion: { (userHeight, error) -> Void in
-            if( error != nil ) {
+            if (error != nil) {
                 print("Error: \(error.localizedDescription)")
                 return
             }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import HealthKit
+import HealthKitUI
 
 class PKA_HealthKitManager {
 
@@ -20,8 +20,8 @@ class PKA_HealthKitManager {
             print("Cannot access HealthKit.")
         }
         healthKitStore.requestAuthorizationToShareTypes(healthDataToWrite, readTypes: healthDataToRead) { (success, error) -> Void in
-            if( completion != nil ) {
-                completion(success:success, error:error)
+            if (completion != nil) {
+                completion(success: success, error: error)
             }
         }
     }
@@ -31,7 +31,7 @@ class PKA_HealthKitManager {
         let currentDate = NSDate()
         let lastHeightPredicate = HKQuery.predicateForSamplesWithStartDate(distantPastHeight, endDate: currentDate, options: .None)
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
-        let heightQuery = HKSampleQuery(sampleType: sampleType, predicate: lastHeightPredicate, limit: 1, sortDescriptors: [sortDescriptor]) { (sampleQuery, results, error ) -> Void in
+        let heightQuery = HKSampleQuery(sampleType: sampleType, predicate: lastHeightPredicate, limit: 1, sortDescriptors: [sortDescriptor]) { (sampleQuery, results, error) -> Void in
             if let queryError = error {
                 completion(nil, queryError)
                 return
@@ -49,7 +49,7 @@ class PKA_HealthKitManager {
         let distanceQuantity = HKQuantity(unit: HKUnit.mileUnit(), doubleValue: distanceRecorded)
         let distance = HKQuantitySample(type: distanceType!, quantity: distanceQuantity, startDate: date, endDate: date)
         healthKitStore.saveObject(distance, withCompletion: { (success, error) -> Void in
-            if( error != nil ) {
+            if (error != nil) {
                 print(error)
             } else {
                 print("Distance recorded. Please verify in Health app.")

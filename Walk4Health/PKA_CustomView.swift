@@ -11,7 +11,7 @@ import UIKit
 class PKA_CustomView: UIView {
 
     override func awakeFromNib() {
-        layer.cornerRadius = 18.0
+        layer.cornerRadius = 18
         layer.shadowColor = UIColor.blackColor().CGColor
         layer.shadowOpacity = 0.75
         layer.shadowRadius = 18
