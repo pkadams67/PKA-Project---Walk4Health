@@ -18,7 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+
+        // Initialize LaunchKit
         LaunchKit.launchWithToken("5BVpp5-2e7tKRD1ldaPRZK6gpJcWYaW_oWEEwvcJOqRL")
+        LaunchKit.sharedInstance().debugMode = true
+        LaunchKit.sharedInstance().verboseLogging = true
 
         // Uncomment for release build
 //                let defaults = NSUserDefaults.standardUserDefaults()
